@@ -7,7 +7,8 @@ chest region with an ultrasound probe, guided by 3D vision, for breast cancer sc
 > streaming to Ubuntu via Python). See the roadmap below.
 
 <!-- TODO: add your name, role, and (optionally) a project start date -->
-**Author:** _TODO — your name / role_
+**Author:** Rohith Rajeev
+
 **Institution:** University of Memphis
 
 ---
