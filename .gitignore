@@ -1,0 +1,53 @@
+# .gitignore — files and folders git should NOT track.
+# Keeps the repo to source code + docs, and out of it: build outputs,
+# large data/recordings, and personal/OS clutter.
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---------- ROS 2 (colcon workspaces) ----------
+build/
+install/
+log/
+
+# ---------- C / C++ build outputs ----------
+*.o
+*.a
+*.so
+cmake-build-*/
+
+# ---------- Large data / recordings (keep OUT of git) ----------
+# Point clouds, depth captures, ultrasound data, rosbags, video.
+# Big binary files bloat the repo and should live elsewhere (shared drive, etc.).
+*.bag
+*.db3
+*.ply
+*.pcd
+*.npy
+*.npz
+*.raw
+*.bin
+*.mkv
+*.mp4
+data/
+recordings/
+scans/
+captures/
+
+# ---------- OS clutter ----------
+.DS_Store
+Thumbs.db
+
+# ---------- Editor / IDE ----------
+.vscode/
+.idea/
+*.swp
+
+# Tip: to force-add a file this list would ignore (e.g. one sample point cloud
+# you DO want in the repo), use:  git add -f path/to/sample.ply
